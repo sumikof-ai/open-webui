@@ -5,7 +5,7 @@ uploads
 .ipynb_checkpoints
 *.db
 _test
-Pipfile
+Pipfile*
 !/data
 /data/*
 /open_webui/data/*
