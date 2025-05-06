@@ -25,9 +25,9 @@ spec:
           limits:
             cpu: "1000m"
             memory: "1Gi"
-        env:
-        - name: OLLAMA_BASE_URL
-          value: "http://ollama-service.open-webui.svc.cluster.local:11434"
+        envFrom:
+          - configMapRef:
+              name: open-webui-configmap
         tty: true
         volumeMounts:
         - name: webui-volume
